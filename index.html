@@ -9,11 +9,14 @@
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <!-- header section start's here  -->
-    <header class="container">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <header class="container my-5">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
             <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -23,16 +26,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
+                  <a class="nav-link active" href="">Home <span class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shoes</a>
+                  <a class="nav-link" href="#shoes">Shoes</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">Bags</a>
+                  <a href="#bags" class="nav-link">Bags</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">Subscribe</a>
+                  <a href="#subscribe" class="nav-link">Subscribe</a>
                 </li>
               </ul>
             </div>
@@ -43,42 +46,48 @@
 
     <main>
       <!-- top-banner section start's here  -->
-      <section class="top-banner container my-5">
+      <section class="top-banner container my-5 panda-bg rounded">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row justify-content-center align-items-center">
                 <div class="col-md-7 col-sm-12 text-center text-lg-start text-md-start ">
-                  <h1>Some text</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
-                  <a class="btn btn-warning" href="">Buy Now</a>                 
+                  <div class="ps-4">
+                    <h1>Some text</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
+                    <a class="btn btn-warning" href="">Buy Now</a>
+                  </div>                 
                 </div>
                 <div class="col-md-5 col-sm-12 col-sm-text-center sm-order-1 ">
-                  <img class="img-fluid" src="./images/banner-images/tv.png" alt="">
+                  <img class="img-fluid p-5" src="./images/banner-images/tv.png" alt="">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row justify-content-center align-items-center">
                 <div class="col-md-7 col-sm-12 text-center text-lg-start text-md-start ">
-                  <h1>Some text</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
-                  <a class="btn btn-warning" href="">Buy Now</a>                 
+                  <div class="ps-4">
+                    <h1>Some text</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
+                    <a class="btn btn-warning" href="">Buy Now</a>
+                  </div>                                  
                 </div>
                 <div class="col-md-5">
-                  <img class="img-fluid" src="./images/banner-images/xbox.png" alt="">
+                  <img class="img-fluid p-5" src="./images/banner-images/xbox.png" alt="">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="row justify-content-center align-items-center">
                 <div class="col-md-7 col-sm-12 text-center text-lg-start text-md-start ">
-                  <h1>Some text</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
-                  <a class="btn btn-warning" href="">Buy Now</a>                 
+                  <div class="ps-4">
+                    <h1>Some text</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, provident.</p>
+                    <a class="btn btn-warning" href="">Buy Now</a>
+                  </div>                            
                 </div>
                 <div class="col-md-5">
-                  <img class="img-fluid" src="./images/banner-images/headphone.png" alt="">
+                  <img class="img-fluid p-5" src="./images/banner-images/headphone.png" alt="">
                 </div>
               </div>
             </div>
@@ -123,7 +132,7 @@
       <!-- section categories end's here  -->
 
             <!-- section shoes's start's here  -->
-            <section class="shoes-section container my-5">
+            <section class="shoes-section container my-5" id="shoes">
               <h2>Shoes</h2>
               <div class="card-group">
                 <div class="card m-2 ms-0 border-0 shadow-lg rounded">
@@ -155,7 +164,7 @@
             <!-- section shoe's end's here  -->
 
       <!-- section bags's start's here  -->
-      <section class="bags-section container my-5">
+      <section class="bags-section container my-5" id="bags">
         <h2>Bags</h2>
         <div class="card-group">
           <div class="card m-2 ms-0 border-0 shadow-lg rounded">
@@ -187,8 +196,8 @@
       <!-- section bag's end's here  -->
 
 
-      <section class="subscribe-section my-5">
-        <div class="container bg-warning p-5 text-center">
+      <section class="subscribe-section my-5" id="subscribe">
+        <div class="container panda-bg p-5 text-center">
           <h1>LET'S STAY IN TOUCH</h1>
           <p>Get updates on sales specials and more</p>
           
