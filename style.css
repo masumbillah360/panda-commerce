@@ -1,3 +1,30 @@
 .panda-bg{
     background-color: rgb(255, 227, 232);
 }
+
+.cat-1-bg{
+    background-color: #ffa500;
+}
+.cat-2-bg{
+    background-color: #da70d6;
+}
+.cat-3-bg{
+    background-color: #0000ff;
+}
+.panda-btn{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+.btn-see-more{
+    background-image: linear-gradient(to bottom, #ffb62e 0%, #FF136F 100%);
+    color: orange;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 15px;
+    color: white;
+    cursor: pointer;
+}
